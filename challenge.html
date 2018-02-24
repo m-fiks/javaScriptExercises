@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challenge Activity</title>
+</head>
+<body>
+
+
+<p id="target"></p>
+
+<script>
+/*where all js goes*/
+
+const itemArray = ['rock', 'paper', 'scissors'];
+
+let p1 = prompt('Player 1, Rock, paper, or scissors?');
+
+let p2 = prompt('Player 2, Rock, paper, or scissors?');
+
+if (p1.toLowerCase() === 'rock' && p2.toLowerCase() === 'paper') {
+    document.querySelector('#target').innerHTML=`Player 2 wins`;
+
+} else if (p1.toLowerCase() === 'rock' && p2.toLowerCase() === 'scissors') {
+    document.querySelector('#target').innerHTML=`Player 1 wins`;
+} else if (p1.toLowerCase() === 'scissors' && p2.toLowerCase() === 'paper'){
+    document.querySelector('#target').innerHTML=`Player 1 wins`;
+} else if (p1.toLowerCase() === 'scissors' && p2.toLowerCase() === 'rock'){
+    document.querySelector('#target').innerHTML=`Player 2 wins`;
+} else if (p1.toLowerCase() === 'paper' && p2.toLowerCase() === 'scissors'){
+    document.querySelector('#target').innerHTML=`Player 2 wins`;
+} else if (p1.toLowerCase() === 'paper' && p2.toLowerCase() === 'rock'){
+    document.querySelector('#target').innerHTML=`Player 1 wins`;
+} else {
+    document.querySelector('#target').innerHTML=`tie game`;
+}
+
+
+</script>
+    
+</body>
+</html>
