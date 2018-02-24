@@ -33,10 +33,11 @@ if (p1.toLowerCase() === 'rock' && p2.toLowerCase() === 'paper') {
     document.querySelector('#target').innerHTML=`Player 2 wins`;
 } else if (p1.toLowerCase() === 'paper' && p2.toLowerCase() === 'rock'){
     document.querySelector('#target').innerHTML=`Player 1 wins`;
-} else {
+} else if(p1.toLowerCase() === p2.toLowerCase()) {
     document.querySelector('#target').innerHTML=`tie game`;
+} else{
+    document.querySelector('#target').innerHTML=`you messed up`;
 }
-
 
 </script>
     
